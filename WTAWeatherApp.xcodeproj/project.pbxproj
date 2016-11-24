@@ -1,0 +1,581 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		31D4EA7B6CA0694CD4D036C8 /* libPods-WTAWeatherApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BEB53CD6471F6C7FE47AF932 /* libPods-WTAWeatherApp.a */; };
+		FED590B51DE6DAFC005BD533 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FED590B41DE6DAFC005BD533 /* main.m */; };
+		FED590B81DE6DAFC005BD533 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FED590B71DE6DAFC005BD533 /* AppDelegate.m */; };
+		FED590BB1DE6DAFC005BD533 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FED590BA1DE6DAFC005BD533 /* ViewController.m */; };
+		FED590BE1DE6DAFC005BD533 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FED590BC1DE6DAFC005BD533 /* Main.storyboard */; };
+		FED590C11DE6DAFC005BD533 /* WTAWeatherApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FED590BF1DE6DAFC005BD533 /* WTAWeatherApp.xcdatamodeld */; };
+		FED590C31DE6DAFC005BD533 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FED590C21DE6DAFC005BD533 /* Assets.xcassets */; };
+		FED590C61DE6DAFC005BD533 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FED590C41DE6DAFC005BD533 /* LaunchScreen.storyboard */; };
+		FED590D61DE6DB31005BD533 /* WTA_LocationService.m in Sources */ = {isa = PBXBuildFile; fileRef = FED590D01DE6DB31005BD533 /* WTA_LocationService.m */; };
+		FED590D71DE6DB31005BD533 /* WTA_BaseRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = FED590D31DE6DB31005BD533 /* WTA_BaseRequest.m */; };
+		FED590D81DE6DB31005BD533 /* WTA_NetworkAgent.m in Sources */ = {isa = PBXBuildFile; fileRef = FED590D51DE6DB31005BD533 /* WTA_NetworkAgent.m */; };
+		FED590DB1DE6DB48005BD533 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FED590DA1DE6DB48005BD533 /* CoreLocation.framework */; };
+		FED590E21DE6E924005BD533 /* WTA_WeatherDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FED590DF1DE6E924005BD533 /* WTA_WeatherDataManager.m */; };
+		FED590E31DE6E924005BD533 /* WTA_WeatherDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = FED590E11DE6E924005BD533 /* WTA_WeatherDataRequest.m */; };
+		FED590E91DE6EBCC005BD533 /* WTA_CurrentModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FED590E81DE6EBCC005BD533 /* WTA_CurrentModel.m */; };
+		FED590F21DE6F448005BD533 /* UIDeviceUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = FED590ED1DE6F448005BD533 /* UIDeviceUtil.m */; };
+		FED590F31DE6F448005BD533 /* UIScreenUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = FED590F01DE6F448005BD533 /* UIScreenUtil.m */; };
+		FED590FE1DE6F58A005BD533 /* WTA_WeatherViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FED590F61DE6F58A005BD533 /* WTA_WeatherViewModel.m */; };
+		FED590FF1DE6F58A005BD533 /* WTA_WeatherMainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FED590FA1DE6F58A005BD533 /* WTA_WeatherMainVC.m */; };
+		FED591001DE6F58A005BD533 /* WTA_WeatherCurrentView.m in Sources */ = {isa = PBXBuildFile; fileRef = FED590FD1DE6F58A005BD533 /* WTA_WeatherCurrentView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1E2357EAA020D16003F7EFFF /* Pods-WTAWeatherApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WTAWeatherApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WTAWeatherApp/Pods-WTAWeatherApp.debug.xcconfig"; sourceTree = "<group>"; };
+		BEB53CD6471F6C7FE47AF932 /* libPods-WTAWeatherApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WTAWeatherApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFD495FD5AAE150AE4F9771D /* Pods-WTAWeatherApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WTAWeatherApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-WTAWeatherApp/Pods-WTAWeatherApp.release.xcconfig"; sourceTree = "<group>"; };
+		FED590B01DE6DAFC005BD533 /* WTAWeatherApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WTAWeatherApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FED590B41DE6DAFC005BD533 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FED590B61DE6DAFC005BD533 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FED590B71DE6DAFC005BD533 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FED590B91DE6DAFC005BD533 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		FED590BA1DE6DAFC005BD533 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		FED590BD1DE6DAFC005BD533 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FED590C01DE6DAFC005BD533 /* WTAWeatherApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WTAWeatherApp.xcdatamodel; sourceTree = "<group>"; };
+		FED590C21DE6DAFC005BD533 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FED590C51DE6DAFC005BD533 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FED590C71DE6DAFC005BD533 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FED590CF1DE6DB31005BD533 /* WTA_LocationService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTA_LocationService.h; sourceTree = "<group>"; };
+		FED590D01DE6DB31005BD533 /* WTA_LocationService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTA_LocationService.m; sourceTree = "<group>"; };
+		FED590D21DE6DB31005BD533 /* WTA_BaseRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTA_BaseRequest.h; sourceTree = "<group>"; };
+		FED590D31DE6DB31005BD533 /* WTA_BaseRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTA_BaseRequest.m; sourceTree = "<group>"; };
+		FED590D41DE6DB31005BD533 /* WTA_NetworkAgent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTA_NetworkAgent.h; sourceTree = "<group>"; };
+		FED590D51DE6DB31005BD533 /* WTA_NetworkAgent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTA_NetworkAgent.m; sourceTree = "<group>"; };
+		FED590DA1DE6DB48005BD533 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		FED590DE1DE6E924005BD533 /* WTA_WeatherDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTA_WeatherDataManager.h; sourceTree = "<group>"; };
+		FED590DF1DE6E924005BD533 /* WTA_WeatherDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTA_WeatherDataManager.m; sourceTree = "<group>"; };
+		FED590E01DE6E924005BD533 /* WTA_WeatherDataRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTA_WeatherDataRequest.h; sourceTree = "<group>"; };
+		FED590E11DE6E924005BD533 /* WTA_WeatherDataRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTA_WeatherDataRequest.m; sourceTree = "<group>"; };
+		FED590E51DE6EB14005BD533 /* WTA_WeatherDataService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTA_WeatherDataService.h; sourceTree = "<group>"; };
+		FED590E71DE6EBCC005BD533 /* WTA_CurrentModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTA_CurrentModel.h; sourceTree = "<group>"; };
+		FED590E81DE6EBCC005BD533 /* WTA_CurrentModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTA_CurrentModel.m; sourceTree = "<group>"; };
+		FED590EB1DE6F448005BD533 /* UIColorUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIColorUtil.h; sourceTree = "<group>"; };
+		FED590EC1DE6F448005BD533 /* UIDeviceUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIDeviceUtil.h; sourceTree = "<group>"; };
+		FED590ED1DE6F448005BD533 /* UIDeviceUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIDeviceUtil.m; sourceTree = "<group>"; };
+		FED590EE1DE6F448005BD533 /* UIFontUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIFontUtil.h; sourceTree = "<group>"; };
+		FED590EF1DE6F448005BD533 /* UIScreenUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIScreenUtil.h; sourceTree = "<group>"; };
+		FED590F01DE6F448005BD533 /* UIScreenUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIScreenUtil.m; sourceTree = "<group>"; };
+		FED590F51DE6F58A005BD533 /* WTA_WeatherViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTA_WeatherViewModel.h; sourceTree = "<group>"; };
+		FED590F61DE6F58A005BD533 /* WTA_WeatherViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTA_WeatherViewModel.m; sourceTree = "<group>"; };
+		FED590F91DE6F58A005BD533 /* WTA_WeatherMainVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTA_WeatherMainVC.h; sourceTree = "<group>"; };
+		FED590FA1DE6F58A005BD533 /* WTA_WeatherMainVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTA_WeatherMainVC.m; sourceTree = "<group>"; };
+		FED590FC1DE6F58A005BD533 /* WTA_WeatherCurrentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTA_WeatherCurrentView.h; sourceTree = "<group>"; };
+		FED590FD1DE6F58A005BD533 /* WTA_WeatherCurrentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTA_WeatherCurrentView.m; sourceTree = "<group>"; };
+		FED591011DE6F6A3005BD533 /* WTA_UIKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTA_UIKit.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FED590AD1DE6DAFC005BD533 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FED590DB1DE6DB48005BD533 /* CoreLocation.framework in Frameworks */,
+				31D4EA7B6CA0694CD4D036C8 /* libPods-WTAWeatherApp.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		55D55D937470179F876487A7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1E2357EAA020D16003F7EFFF /* Pods-WTAWeatherApp.debug.xcconfig */,
+				EFD495FD5AAE150AE4F9771D /* Pods-WTAWeatherApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FED590A71DE6DAFC005BD533 = {
+			isa = PBXGroup;
+			children = (
+				FED590B21DE6DAFC005BD533 /* WTAWeatherApp */,
+				FED590B11DE6DAFC005BD533 /* Products */,
+				FED590D91DE6DB48005BD533 /* Frameworks */,
+				55D55D937470179F876487A7 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		FED590B11DE6DAFC005BD533 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FED590B01DE6DAFC005BD533 /* WTAWeatherApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FED590B21DE6DAFC005BD533 /* WTAWeatherApp */ = {
+			isa = PBXGroup;
+			children = (
+				FED590F41DE6F58A005BD533 /* WTAUI */,
+				FED590DC1DE6E924005BD533 /* WTALogic */,
+				FED590CD1DE6DB31005BD533 /* WTAFoundation */,
+				FED590B61DE6DAFC005BD533 /* AppDelegate.h */,
+				FED590B71DE6DAFC005BD533 /* AppDelegate.m */,
+				FED590B91DE6DAFC005BD533 /* ViewController.h */,
+				FED590BA1DE6DAFC005BD533 /* ViewController.m */,
+				FED590BC1DE6DAFC005BD533 /* Main.storyboard */,
+				FED590C21DE6DAFC005BD533 /* Assets.xcassets */,
+				FED590C41DE6DAFC005BD533 /* LaunchScreen.storyboard */,
+				FED590C71DE6DAFC005BD533 /* Info.plist */,
+				FED590BF1DE6DAFC005BD533 /* WTAWeatherApp.xcdatamodeld */,
+				FED590B31DE6DAFC005BD533 /* Supporting Files */,
+			);
+			path = WTAWeatherApp;
+			sourceTree = "<group>";
+		};
+		FED590B31DE6DAFC005BD533 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FED590B41DE6DAFC005BD533 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FED590CD1DE6DB31005BD533 /* WTAFoundation */ = {
+			isa = PBXGroup;
+			children = (
+				FED590EA1DE6F448005BD533 /* WTAUIKit */,
+				FED590CE1DE6DB31005BD533 /* LocationService */,
+				FED590D11DE6DB31005BD533 /* Network */,
+			);
+			path = WTAFoundation;
+			sourceTree = "<group>";
+		};
+		FED590CE1DE6DB31005BD533 /* LocationService */ = {
+			isa = PBXGroup;
+			children = (
+				FED590CF1DE6DB31005BD533 /* WTA_LocationService.h */,
+				FED590D01DE6DB31005BD533 /* WTA_LocationService.m */,
+			);
+			path = LocationService;
+			sourceTree = "<group>";
+		};
+		FED590D11DE6DB31005BD533 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				FED590D21DE6DB31005BD533 /* WTA_BaseRequest.h */,
+				FED590D31DE6DB31005BD533 /* WTA_BaseRequest.m */,
+				FED590D41DE6DB31005BD533 /* WTA_NetworkAgent.h */,
+				FED590D51DE6DB31005BD533 /* WTA_NetworkAgent.m */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		FED590D91DE6DB48005BD533 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FED590DA1DE6DB48005BD533 /* CoreLocation.framework */,
+				BEB53CD6471F6C7FE47AF932 /* libPods-WTAWeatherApp.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FED590DC1DE6E924005BD533 /* WTALogic */ = {
+			isa = PBXGroup;
+			children = (
+				FED590E61DE6EBCC005BD533 /* WTACurrentCondition */,
+				FED590DD1DE6E924005BD533 /* DataService */,
+			);
+			path = WTALogic;
+			sourceTree = "<group>";
+		};
+		FED590DD1DE6E924005BD533 /* DataService */ = {
+			isa = PBXGroup;
+			children = (
+				FED590E51DE6EB14005BD533 /* WTA_WeatherDataService.h */,
+				FED590DE1DE6E924005BD533 /* WTA_WeatherDataManager.h */,
+				FED590DF1DE6E924005BD533 /* WTA_WeatherDataManager.m */,
+				FED590E01DE6E924005BD533 /* WTA_WeatherDataRequest.h */,
+				FED590E11DE6E924005BD533 /* WTA_WeatherDataRequest.m */,
+			);
+			name = DataService;
+			path = Network;
+			sourceTree = "<group>";
+		};
+		FED590E61DE6EBCC005BD533 /* WTACurrentCondition */ = {
+			isa = PBXGroup;
+			children = (
+				FED590E71DE6EBCC005BD533 /* WTA_CurrentModel.h */,
+				FED590E81DE6EBCC005BD533 /* WTA_CurrentModel.m */,
+			);
+			path = WTACurrentCondition;
+			sourceTree = "<group>";
+		};
+		FED590EA1DE6F448005BD533 /* WTAUIKit */ = {
+			isa = PBXGroup;
+			children = (
+				FED591011DE6F6A3005BD533 /* WTA_UIKit.h */,
+				FED590EB1DE6F448005BD533 /* UIColorUtil.h */,
+				FED590EC1DE6F448005BD533 /* UIDeviceUtil.h */,
+				FED590ED1DE6F448005BD533 /* UIDeviceUtil.m */,
+				FED590EE1DE6F448005BD533 /* UIFontUtil.h */,
+				FED590EF1DE6F448005BD533 /* UIScreenUtil.h */,
+				FED590F01DE6F448005BD533 /* UIScreenUtil.m */,
+			);
+			path = WTAUIKit;
+			sourceTree = "<group>";
+		};
+		FED590F41DE6F58A005BD533 /* WTAUI */ = {
+			isa = PBXGroup;
+			children = (
+				FED590F51DE6F58A005BD533 /* WTA_WeatherViewModel.h */,
+				FED590F61DE6F58A005BD533 /* WTA_WeatherViewModel.m */,
+				FED590F71DE6F58A005BD533 /* WTAMainVC */,
+			);
+			path = WTAUI;
+			sourceTree = "<group>";
+		};
+		FED590F71DE6F58A005BD533 /* WTAMainVC */ = {
+			isa = PBXGroup;
+			children = (
+				FED590F81DE6F58A005BD533 /* Controllers */,
+				FED590FB1DE6F58A005BD533 /* Views */,
+			);
+			path = WTAMainVC;
+			sourceTree = "<group>";
+		};
+		FED590F81DE6F58A005BD533 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FED590F91DE6F58A005BD533 /* WTA_WeatherMainVC.h */,
+				FED590FA1DE6F58A005BD533 /* WTA_WeatherMainVC.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		FED590FB1DE6F58A005BD533 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FED590FC1DE6F58A005BD533 /* WTA_WeatherCurrentView.h */,
+				FED590FD1DE6F58A005BD533 /* WTA_WeatherCurrentView.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FED590AF1DE6DAFC005BD533 /* WTAWeatherApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FED590CA1DE6DAFC005BD533 /* Build configuration list for PBXNativeTarget "WTAWeatherApp" */;
+			buildPhases = (
+				DEA72B182BBBD20B6E81E296 /* [CP] Check Pods Manifest.lock */,
+				FED590AC1DE6DAFC005BD533 /* Sources */,
+				FED590AD1DE6DAFC005BD533 /* Frameworks */,
+				FED590AE1DE6DAFC005BD533 /* Resources */,
+				1CB0AEF7E462BE77278F1F47 /* [CP] Embed Pods Frameworks */,
+				5B2997B3D2C79626D4EA0C85 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WTAWeatherApp;
+			productName = WTAWeatherApp;
+			productReference = FED590B01DE6DAFC005BD533 /* WTAWeatherApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FED590A81DE6DAFC005BD533 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = wanghongbo;
+				TargetAttributes = {
+					FED590AF1DE6DAFC005BD533 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = B83JBVZ6M5;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = FED590AB1DE6DAFC005BD533 /* Build configuration list for PBXProject "WTAWeatherApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FED590A71DE6DAFC005BD533;
+			productRefGroup = FED590B11DE6DAFC005BD533 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FED590AF1DE6DAFC005BD533 /* WTAWeatherApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FED590AE1DE6DAFC005BD533 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FED590C61DE6DAFC005BD533 /* LaunchScreen.storyboard in Resources */,
+				FED590C31DE6DAFC005BD533 /* Assets.xcassets in Resources */,
+				FED590BE1DE6DAFC005BD533 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1CB0AEF7E462BE77278F1F47 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WTAWeatherApp/Pods-WTAWeatherApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5B2997B3D2C79626D4EA0C85 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WTAWeatherApp/Pods-WTAWeatherApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DEA72B182BBBD20B6E81E296 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FED590AC1DE6DAFC005BD533 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FED590BB1DE6DAFC005BD533 /* ViewController.m in Sources */,
+				FED590D61DE6DB31005BD533 /* WTA_LocationService.m in Sources */,
+				FED591001DE6F58A005BD533 /* WTA_WeatherCurrentView.m in Sources */,
+				FED590E31DE6E924005BD533 /* WTA_WeatherDataRequest.m in Sources */,
+				FED590B81DE6DAFC005BD533 /* AppDelegate.m in Sources */,
+				FED590E21DE6E924005BD533 /* WTA_WeatherDataManager.m in Sources */,
+				FED590FE1DE6F58A005BD533 /* WTA_WeatherViewModel.m in Sources */,
+				FED590B51DE6DAFC005BD533 /* main.m in Sources */,
+				FED590C11DE6DAFC005BD533 /* WTAWeatherApp.xcdatamodeld in Sources */,
+				FED590D71DE6DB31005BD533 /* WTA_BaseRequest.m in Sources */,
+				FED590FF1DE6F58A005BD533 /* WTA_WeatherMainVC.m in Sources */,
+				FED590E91DE6EBCC005BD533 /* WTA_CurrentModel.m in Sources */,
+				FED590F31DE6F448005BD533 /* UIScreenUtil.m in Sources */,
+				FED590F21DE6F448005BD533 /* UIDeviceUtil.m in Sources */,
+				FED590D81DE6DB31005BD533 /* WTA_NetworkAgent.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FED590BC1DE6DAFC005BD533 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FED590BD1DE6DAFC005BD533 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FED590C41DE6DAFC005BD533 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FED590C51DE6DAFC005BD533 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FED590C81DE6DAFC005BD533 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FED590C91DE6DAFC005BD533 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FED590CB1DE6DAFC005BD533 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1E2357EAA020D16003F7EFFF /* Pods-WTAWeatherApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = B83JBVZ6M5;
+				INFOPLIST_FILE = WTAWeatherApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wanghongbo.wather.WTAWeatherApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FED590CC1DE6DAFC005BD533 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EFD495FD5AAE150AE4F9771D /* Pods-WTAWeatherApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = B83JBVZ6M5;
+				INFOPLIST_FILE = WTAWeatherApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wanghongbo.wather.WTAWeatherApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FED590AB1DE6DAFC005BD533 /* Build configuration list for PBXProject "WTAWeatherApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FED590C81DE6DAFC005BD533 /* Debug */,
+				FED590C91DE6DAFC005BD533 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FED590CA1DE6DAFC005BD533 /* Build configuration list for PBXNativeTarget "WTAWeatherApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FED590CB1DE6DAFC005BD533 /* Debug */,
+				FED590CC1DE6DAFC005BD533 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FED590BF1DE6DAFC005BD533 /* WTAWeatherApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FED590C01DE6DAFC005BD533 /* WTAWeatherApp.xcdatamodel */,
+			);
+			currentVersion = FED590C01DE6DAFC005BD533 /* WTAWeatherApp.xcdatamodel */;
+			path = WTAWeatherApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = FED590A81DE6DAFC005BD533 /* Project object */;
+}
